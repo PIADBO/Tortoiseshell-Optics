@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  font-size: 1rem;
+}
+
 /*Header section*/
 
 header {
@@ -22,21 +26,21 @@ header {
   width: 100vw;
 }
 
-/*Navigation bar*/
+/*Banner*/
 
 .container {
   max-width: 960px;
+  max-height: 31rem;
   margin: 0 auto;
 }
 
-.navigation_bar {
+.banner {
   display: flex;
   justify-content: space-between;
   background-color: cadetblue;
   color: white;
   position: relative;
   top: 1rem;
-  z-index: 5;
 }
 
 .logo {
@@ -65,13 +69,26 @@ li {
   padding: 1rem 1rem;
 }
 
-/*Banner*/
+/*Title*/
 
-.banner {
+.title {
+  position: absolute;
+  top: 14rem;
+  right: 3rem;
+}
 
+.title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  display: inline-block;
 }
 
 /*Main section*/
+
+/*Advantages part*/
 
 .advantages {
   display: flex;
@@ -104,10 +121,34 @@ img {
   max-width: 4.5rem;
 }
 
-
-
-/*Advantages part*/
-
 /*Info part*/
+
+.infos {
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.info {
+  width: 35%;
+}
+
+.info.philosophy {
+  width: 35%;
+  margin: 0 5% 5rem 10%;
+}
+
+.info h4 {
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  text-align: justify;
+}
 
 /*Footer section*/
